@@ -7,10 +7,13 @@
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-const readline = require('node:readline');
+const readline = require('readline');
 
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
+rl.question('Is this TEST question working for you? ) ', (response) => {
+  console.log(response);
+});
